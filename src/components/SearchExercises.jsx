@@ -35,6 +35,8 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           exercise.bodyPart.toLowerCase().includes(search)
       );
 
+      console.log(searchExercises);
+
       setSearch('');
       setExercises(searchExercises);
     }
