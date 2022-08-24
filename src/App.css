@@ -57,7 +57,7 @@ body {
 }
 
 .exercise-card {
-  height: 445px;
+  width: 28%;
   background: #fff;
   border-top: 4px solid #ff2625;
   border-bottom-left-radius: 20px;
@@ -71,7 +71,8 @@ body {
 }
 
 .exercise-card img {
-  height: 300px;
+  margin-inline: auto;
+  width: 300px;
 }
 
 .bodyPart-card {
@@ -93,8 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 387px;
-  height: 381px;
+  width: 31%;
   text-decoration: none;
 }
 
@@ -106,6 +106,9 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  .exercise-card {
+    width: 45%;
+  }
   .detail-image {
     width: 400px;
   }
@@ -120,7 +123,16 @@ body {
   }
 
   .exercise-video {
-    width: 320px;
-    height: 300px;
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .exercise-card {
+    width: 90%;
+  }
+
+  .exercise-video {
+    width: 90%;
   }
 }
