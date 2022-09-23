@@ -12,9 +12,9 @@ const ExercisesVideos = ({ exercisesVideos, name }) => {
       <Stack
         justifyContent='space-between'
         flexWrap='wrap'
-        sx={{ flexDirection: { sm: 'row' }, alignItems: { lg: 'flex-start', xs: 'center' }, gap: '40px' }}
+        sx={{ flexDirection: { sm: 'row' }, alignItems: { lg: 'flex-start', xs: 'center' }, gap: '20px' }}
       >
-        {exercisesVideosFiltered?.slice(1, 4).map((item, index) => {
+        {exercisesVideosFiltered?.slice(1, 5).map((item, index) => {
           return (
             <a
               className='exercise-video'
@@ -25,9 +25,9 @@ const ExercisesVideos = ({ exercisesVideos, name }) => {
             >
               <img src={item.video.thumbnails[0].url} alt={item.video.title} />
 
-              <Box>
+              <Box mt={2}>
                 <Typography variant='h6' color='#000' textTransform='capitalize'>
-                  {item.video.title.length <= 35 ? item.video.title : `${item.video.title.slice(0, 35)}...`}
+                  {item.video.title.length <= 22 ? item.video.title : `${item.video.title.slice(0, 22)}...`}
                 </Typography>
                 <Typography color='#000' textTransform='capitalize'>
                   {item.video.channelName}

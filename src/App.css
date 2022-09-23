@@ -93,8 +93,7 @@ body {
 .exercise-video {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  width: 31%;
+  width: 22%;
   text-decoration: none;
 }
 
@@ -135,4 +134,8 @@ body {
   .exercise-video {
     width: 90%;
   }
+}
+
+.w-100 {
+  width: 100% !important;
 }

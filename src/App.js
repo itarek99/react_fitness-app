@@ -10,12 +10,14 @@ import Home from './pages/Home';
 
 const App = () => {
   return (
-    <Box width='400px' sx={{ width: { xl: '1488px', lg: '1200px' } }} m='auto' px='8px'>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/exercise/:id' element={<ExerciseDetails />} />
-      </Routes>
+    <Box>
+      <Box width='400px' sx={{ width: { xl: '1488px', lg: '1200px' } }} m='auto' px='8px'>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/exercise/:id' element={<ExerciseDetails />} />
+        </Routes>
+      </Box>
       <Footer />
     </Box>
   );

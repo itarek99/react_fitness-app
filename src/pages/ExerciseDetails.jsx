@@ -1,10 +1,10 @@
 import { Box } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import SimilarExercises from '../components/SimilarExercises';
 
 import Details from '../components/Details';
 import ExercisesVideos from '../components/ExercisesVideos';
-import SimilarExercises from '../components/SimilarExercises';
 import { exerciseOptions, fetchData, youtubeOptions } from '../utils/fetchData';
 
 const ExerciseDetails = () => {
@@ -49,7 +49,7 @@ const ExerciseDetails = () => {
     <Box>
       <Details exercisesDetail={exercisesDetail} />
       <ExercisesVideos exercisesVideos={exercisesVideos} name={exercisesDetail.name} />
-      <SimilarExercises equipmentExercise={equipmentExercises} targetMuscleExercises={targetMuscleExercises} />
+      <SimilarExercises equipmentExercises={equipmentExercises} targetMuscleExercises={targetMuscleExercises} />
     </Box>
   );
 };

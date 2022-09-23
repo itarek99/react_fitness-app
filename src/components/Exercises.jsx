@@ -35,13 +35,13 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   }, [setExercises, bodyPart]);
 
   return (
-    <Box id='exercises' mt='50px' p='20px' sx={{ mt: { lg: '110px' } }}>
+    <Box id='exercises' my='30px' p='20px' sx={{ mt: { lg: '110px' } }}>
       <Typography variant='h3' mb='46px'>
         Showing Result
       </Typography>
       <Stack direction='row' flexWrap='wrap' justifyContent='center' sx={{ gap: { lg: '60px', xs: '30px' } }}>
         {currentExercise.map((exercise, index) => (
-          <ExerciseCard key={index} exercise={exercise} />
+          <ExerciseCard key={index} exercise={exercise} styleClass='exercise-card' />
         ))}
       </Stack>
       <Stack mt='100px' alignItems='center'>
